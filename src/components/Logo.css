@@ -1,0 +1,11 @@
+.logo {
+  display: block;
+  height: 50px;
+  width: auto;
+}
+
+@media (max-width: 600px) {
+  .logo {
+    height: 40px;
+  }
+}

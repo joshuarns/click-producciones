@@ -1,0 +1,185 @@
+.nav {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 50;
+  transition: background-color 0.4s var(--ease), border-color 0.4s var(--ease);
+  border-bottom: 1px solid transparent;
+}
+
+.nav--scrolled {
+  background: rgba(12, 12, 13, 0.72);
+  backdrop-filter: blur(18px) saturate(140%);
+  -webkit-backdrop-filter: blur(18px) saturate(140%);
+  border-bottom-color: var(--line);
+}
+
+.nav--open {
+  background: transparent;
+  border-bottom-color: transparent;
+  backdrop-filter: none;
+}
+
+.nav__inner {
+  height: var(--nav-h);
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  position: relative;
+  z-index: 2;
+}
+
+.nav__brand {
+  margin-right: auto;
+}
+
+.nav__links {
+  display: flex;
+  gap: 36px;
+}
+
+/* Efecto de texto que "rueda" al pasar el mouse */
+.nav__link {
+  font-size: 15px;
+  font-weight: 500;
+  overflow: hidden;
+  display: inline-block;
+  height: 1.4em;
+  line-height: 1.4em;
+}
+
+.nav__link span {
+  display: inline-block;
+  position: relative;
+  transition: transform 0.45s var(--ease);
+}
+
+.nav__link span::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 100%;
+  color: var(--accent);
+}
+
+.nav__link:hover span {
+  transform: translateY(-100%);
+}
+
+.nav__cta {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 11px 20px;
+  border-radius: 999px;
+  background: var(--text);
+  color: var(--bg);
+  transition: background-color 0.3s var(--ease), transform 0.3s var(--ease);
+}
+
+.nav__cta:hover {
+  background: var(--accent);
+  transform: translateY(-1px);
+}
+
+.nav__burger {
+  display: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  position: relative;
+}
+
+.nav__burger span {
+  position: absolute;
+  left: 13px;
+  right: 13px;
+  height: 1.5px;
+  background: var(--text);
+  transition: transform 0.4s var(--ease);
+}
+
+.nav__burger span:first-child {
+  transform: translateY(-4px);
+}
+
+.nav__burger span:last-child {
+  transform: translateY(4px);
+}
+
+.nav--open .nav__burger span:first-child {
+  transform: rotate(45deg);
+}
+
+.nav--open .nav__burger span:last-child {
+  transform: rotate(-45deg);
+}
+
+.nav__progress {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 2px;
+  background: var(--accent);
+  transform-origin: 0 50%;
+  z-index: 3;
+}
+
+.mobile-menu {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  background: var(--bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: calc(var(--nav-h) + 40px);
+  padding-bottom: 32px;
+}
+
+.mobile-menu__links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.mobile-menu__links a {
+  font-size: clamp(44px, 13vw, 72px);
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.mobile-menu__num {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: var(--accent);
+  margin-top: 12px;
+}
+
+.mobile-menu__foot {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.mobile-menu__foot div {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 860px) {
+  .nav__links,
+  .nav__cta {
+    display: none;
+  }
+  .nav__burger {
+    display: block;
+  }
+}
