@@ -58,11 +58,11 @@ export default function Gallery() {
   }
 
   return (
-    <section className="section gallery" id="catalogo">
+    <section className="section gallery" id="portafolio">
       <div className="container">
         <div className="gallery__head">
           <Reveal>
-            <p className="eyebrow">Catálogo de fotografía</p>
+            <p className="eyebrow">Portafolio</p>
             <h2 className="gallery__title">
               Imágenes que <span className="serif">comunican</span>
             </h2>

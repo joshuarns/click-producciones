@@ -80,7 +80,7 @@ export default function About() {
 
         <div className="services" id="servicios">
           <Reveal>
-            <h3 className="services__heading">Servicios</h3>
+            <h3 className="eyebrow services__heading">Servicios</h3>
             <p className="services__intro">
               Más de {site.years} años dando servicio a todo tipo de empresas.
             </p>

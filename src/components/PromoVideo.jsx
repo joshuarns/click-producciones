@@ -24,8 +24,8 @@ export default function PromoVideo() {
             </h2>
           </Reveal>
           <Reveal as="p" className="promo__lead" delay={0.1}>
-            Te invitamos a conocer más de lo que hacemos a través de este video promocional y del catálogo de
-            fotografías que te mostramos a continuación.
+            Te invitamos a conocer más de lo que hacemos a través de este video promocional y del portafolio de
+            proyectos que te mostramos a continuación.
           </Reveal>
         </div>
 

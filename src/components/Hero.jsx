@@ -86,7 +86,7 @@ export default function Hero() {
             para que tus mensajes lleguen claros a tus clientes y colaboradores.
           </p>
           <div className="hero__actions">
-            <a href="#catalogo" className="btn btn--primary">
+            <a href="#portafolio" className="btn btn--primary">
               Ver nuestro trabajo
               <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
                 <path d="M8 2v12M3 9l5 5 5-5" fill="none" stroke="currentColor" strokeWidth="1.6" />
