@@ -35,8 +35,8 @@
   z-index: 0;
   pointer-events: none;
   background:
-    linear-gradient(180deg, rgba(12, 12, 13, 0.6) 0%, rgba(12, 12, 13, 0.25) 30%, rgba(12, 12, 13, 0.5) 65%, var(--bg) 100%),
-    linear-gradient(90deg, rgba(12, 12, 13, 0.75) 0%, rgba(12, 12, 13, 0.35) 55%, rgba(12, 12, 13, 0.15) 100%);
+    linear-gradient(180deg, rgba(12, 12, 13, 0.45) 0%, rgba(12, 12, 13, 0.1) 30%, rgba(12, 12, 13, 0.3) 65%, var(--bg) 100%),
+    linear-gradient(90deg, rgba(12, 12, 13, 0.6) 0%, rgba(12, 12, 13, 0.2) 55%, rgba(12, 12, 13, 0) 100%);
 }
 
 .hero__content {
