@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Originales del portafolio (pesados); la web usa public/portafolio
+src/assets/img/portafolio/
