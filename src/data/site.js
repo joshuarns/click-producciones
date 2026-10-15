@@ -49,19 +49,19 @@ export const site = {
     },
   ],
   // TODO: el documento pide logos; colocar los archivos y cambiar a imágenes cuando estén disponibles.
-  // En el mismo orden que los logos de src/assets/img/clientes (logo-01, logo-02, …)
+  // Logos en src/assets/img/clientes, en el orden en que aparecen en la marquesina
   clients: [
-    'Signify',
-    'Hammond Power Solutions',
-    'Symrise',
-    'Quali',
-    'Toyota',
-    'Bravo Montacargas',
-    'Abrasivos y Conversiones Ideal',
-    'AFORE Invercap',
-    'Christus Muguerza',
-    'Ox School of English',
-    'Redicolor',
-    'RIISA',
+    { name: 'Toyota', logo: 'logo-05.jpg' },
+    { name: 'Signify', logo: 'logo-01.jpg' },
+    { name: 'Hammond Power Solutions', logo: 'logo-02.jpg' },
+    { name: 'Qualtia', logo: 'logo-04.jpg' },
+    { name: 'Symrise', logo: 'logo-03.jpg' },
+    { name: 'Bravo Montacargas', logo: 'logo-06.jpg' },
+    { name: 'Abrasivos y Conversiones Ideal', logo: 'logo-07.jpg' },
+    { name: 'AFORE Invercap', logo: 'logo-08.jpg' },
+    { name: 'Christus Muguerza', logo: 'logo-09.jpg' },
+    { name: 'Ox School of English', logo: 'logo-10.jpg' },
+    { name: 'Redicolor', logo: 'logo-11.jpg' },
+    { name: 'RIISA', logo: 'logo-12.jpg' },
   ],
 }

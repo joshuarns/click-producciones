@@ -2,9 +2,8 @@ import Reveal from './Reveal'
 import { site } from '../data/site'
 import './Clients.css'
 
-const logos = Object.entries(import.meta.glob('../assets/img/clientes/*.jpg', { eager: true, import: 'default' }))
-  .sort(([a], [b]) => a.localeCompare(b))
-  .map(([, src], i) => ({ src, name: site.clients[i] }))
+const files = import.meta.glob('../assets/img/clientes/*', { eager: true, import: 'default' })
+const logos = site.clients.map(({ name, logo }) => ({ name, src: files[`../assets/img/clientes/${logo}`] }))
 
 export default function Clients() {
   return (

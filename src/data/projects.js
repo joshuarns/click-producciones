@@ -45,7 +45,7 @@ const INFO = {
 const ITEMS = {
   Panorámicas: [
     { size: 'wide', client: 'Signify', photos: ['20x40-signify-2'] },
-    { size: 'wide', client: 'Oxford', photos: ['20x40-oxford-administrativa-1'] },
+    { size: 'wide', client: 'Instituto Tecnológico de Nuevo León', photos: ['itnl-50-aniversario'] },
     { size: 'wide', client: 'IDEAL', photos: ['a-1416-ideal'] },
     { size: 'wide', client: 'Relpisa', photos: ['a-1886-relpisa-op2-20x30', 'a-1886-30x20-opcion-2-relpisa'] },
     { size: 'wide', client: 'HPS', photos: ['hps-20x30-final', 'hps-latam-11x20'] },
