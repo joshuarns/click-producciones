@@ -49,16 +49,14 @@ export const site = {
     },
   ],
   // TODO: el documento pide logos; colocar los archivos y cambiar a imágenes cuando estén disponibles.
+  // En el mismo orden que los logos de src/assets/img/clientes (logo-01, logo-02, …)
   clients: [
-    'Signify (Philips Lighting)',
+    'Signify',
     'Hammond Power Solutions',
     'Symrise',
     'Quali',
-    'CAD Toner',
-    'PLOMAQ',
     'Toyota',
     'Bravo Montacargas',
-    'Grupo Empresarial Control',
     'Abrasivos y Conversiones Ideal',
     'AFORE Invercap',
     'Christus Muguerza',

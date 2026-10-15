@@ -26,6 +26,8 @@
 .clients__track {
   display: flex;
   width: max-content;
+  /* La animación aísla la fusión de los logos: necesita su propio fondo */
+  background: var(--bg);
   animation: clients 60s linear infinite;
 }
 
@@ -34,25 +36,30 @@
 }
 
 .clients__item {
-  display: inline-flex;
+  flex: none;
+  display: flex;
   align-items: center;
-  gap: 40px;
-  padding-right: 40px;
-  font-size: clamp(28px, 4vw, 56px);
-  font-weight: 600;
-  letter-spacing: -0.04em;
-  color: rgba(243, 241, 236, 0.22);
-  white-space: nowrap;
-  transition: color 0.3s var(--ease);
+  padding-right: clamp(16px, 2.5vw, 40px);
 }
 
-.clients__item:hover {
-  color: var(--text);
+/* Los logos vienen a color sobre blanco: se invierten a monocromo claro y el fondo
+   (ahora negro) desaparece con `screen`. Al pasar el cursor se muestran a color. */
+.clients__item img {
+  display: block;
+  width: clamp(150px, 16vw, 240px);
+  aspect-ratio: 2 / 1;
+  object-fit: contain;
+  filter: grayscale(1) invert(1) contrast(1.6);
+  mix-blend-mode: screen;
+  opacity: 0.65;
+  border-radius: 12px;
+  transition: opacity 0.3s var(--ease), filter 0.3s var(--ease);
 }
 
-.clients__sep {
-  font-size: 0.4em;
-  color: var(--accent);
+.clients__item:hover img {
+  filter: none;
+  mix-blend-mode: normal;
+  opacity: 1;
 }
 
 @keyframes clients {
