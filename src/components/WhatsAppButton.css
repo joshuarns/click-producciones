@@ -1,0 +1,45 @@
+/* Por debajo del menú (50) y del visor (80) para no taparlos */
+.wa-fab {
+  position: fixed;
+  right: clamp(16px, 2.5vw, 32px);
+  bottom: clamp(16px, 2.5vw, 32px);
+  z-index: 45;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 60px;
+  padding: 0 16px;
+  border-radius: 999px;
+  background: #25d366;
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
+}
+
+.wa-fab:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 36px rgba(37, 211, 102, 0.35);
+}
+
+/* La etiqueta se despliega al pasar el cursor; en táctil solo se ve el ícono */
+.wa-fab__label {
+  max-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: max-width 0.4s var(--ease);
+}
+
+.wa-fab:hover .wa-fab__label,
+.wa-fab:focus-visible .wa-fab__label {
+  max-width: 120px;
+}
+
+.wa-fab:not(:hover):not(:focus-visible) {
+  gap: 0;
+  width: 60px;
+  padding: 0;
+  justify-content: center;
+}
