@@ -25,3 +25,6 @@ dist-ssr
 
 # Originales del portafolio (pesados); la web usa public/portafolio
 src/assets/img/portafolio/
+
+# Paquete para cPanel
+click-producciones-cpanel.zip

@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "oxlint",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "cpanel": "vite build && rm -f click-producciones-cpanel.zip && cd dist && zip -qrX ../click-producciones-cpanel.zip . -x '*.DS_Store'"
   },
   "dependencies": {
     "motion": "^13.4.4",

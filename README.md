@@ -6,7 +6,21 @@ Sitio one page con galería de proyectos. React 19 + Vite + [Motion](https://mot
 npm install
 npm run dev      # desarrollo
 npm run build    # genera /dist para publicar
+npm run cpanel   # build + click-producciones-cpanel.zip listo para subir
 ```
+
+## Publicar en cPanel
+
+1. `npm run cpanel` genera `click-producciones-cpanel.zip` en la raíz del proyecto.
+2. En cPanel → **Administrador de archivos** → `public_html` (o la carpeta raíz del dominio).
+   Activa **Configuración → Mostrar archivos ocultos** para ver el `.htaccess`.
+3. Borra los archivos del sitio anterior, **Cargar** el zip y luego clic derecho → **Extraer**.
+   `index.html`, `.htaccess`, `assets/` y `portafolio/` deben quedar directamente dentro de `public_html`.
+4. Borra el zip del servidor.
+
+El sitio está pensado para la raíz del dominio (las rutas empiezan con `/`); no funciona dentro de una subcarpeta.
+El `.htaccess` (en `public/`) fuerza HTTPS, quita el `www`, comprime y configura la caché.
+Para que la redirección a HTTPS funcione, el dominio necesita certificado SSL (cPanel → **SSL/TLS Status** → AutoSSL).
 
 ## Editar contenido
 

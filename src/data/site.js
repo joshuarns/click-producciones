@@ -4,8 +4,7 @@ export const site = {
   tagline: 'Fotografía y video corporativo',
   years: 15,
   location: 'Monterrey, Nuevo León',
-  // TODO: el documento deja el correo en blanco; reemplazar por el correo real.
-  email: 'hola@clickproducciones.com',
+  email: 'ventas@clickproducciones.mx',
   phone: '81 1774 0778',
   whatsapp: 'https://wa.me/528117740778?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20una%20cotizaci%C3%B3n.',
   socials: [
