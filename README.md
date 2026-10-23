@@ -22,6 +22,10 @@ El sitio está pensado para la raíz del dominio (las rutas empiezan con `/`); n
 El `.htaccess` (en `public/`) fuerza HTTPS, quita el `www`, comprime y configura la caché.
 Para que la redirección a HTTPS funcione, el dominio necesita certificado SSL (cPanel → **SSL/TLS Status** → AutoSSL).
 
+**Formulario de cotización:** lo procesa `public/enviar.php` con `mail()` de PHP y lo envía a `ventas@clickproducciones.mx`
+(destino y remitente se cambian al inicio del archivo). Solo funciona en el hosting; con `npm run dev` muestra el aviso de error.
+Para que no llegue a spam, el dominio debe tener SPF y DKIM activos (cPanel → **Email Deliverability**).
+
 ## Editar contenido
 
 | Qué | Dónde |

@@ -47,7 +47,6 @@ export const site = {
       text: 'Foto y video de convenciones, aniversarios, lanzamientos y eventos empresariales.',
     },
   ],
-  // TODO: el documento pide logos; colocar los archivos y cambiar a imágenes cuando estén disponibles.
   // Logos en src/assets/img/clientes, en el orden en que aparecen en la marquesina
   clients: [
     { name: 'Toyota', logo: 'logo-05.jpg' },
